@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Recursion" Database="" Version="10000">
+  <Project Name="TailHead" Path="TailHead/TailHead.project" Active="No"/>
+  <Project Name="StaticGlobal" Path="StaticGlobal/StaticGlobal.project" Active="No"/>
+  <Project Name="TreeRecursion" Path="TreeRecursion/TreeRecursion.project" Active="Yes"/>
+  <Project Name="IndirectRecursion" Path="IndirectRecursion/IndirectRecursion.project" Active="No"/>
+  <Project Name="NestedRecursion" Path="NestedRecursion/NestedRecursion.project" Active="No"/>
+  <Project Name="SumofN" Path="SumofN/SumofN.project" Active="No"/>
+  <Project Name="Factorial" Path="Factorial/Factorial.project" Active="No"/>
+  <Project Name="PowerSeries" Path="PowerSeries/PowerSeries.project" Active="No"/>
+  <Project Name="TaylorSeries" Path="TaylorSeries/TaylorSeries.project" Active="No"/>
+  <Project Name="TaylorSeries_Horner" Path="TaylorSeries_Horner/TaylorSeries_Horner.project" Active="No"/>
+  <Project Name="Fibonacci" Path="Fibonacci/Fibonacci.project" Active="No"/>
+  <Project Name="nCr" Path="nCr/nCr.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="TailHead" ConfigName="Debug"/>
+      <Project Name="StaticGlobal" ConfigName="Debug"/>
+      <Project Name="TreeRecursion" ConfigName="Debug"/>
+      <Project Name="IndirectRecursion" ConfigName="Debug"/>
+      <Project Name="NestedRecursion" ConfigName="Debug"/>
+      <Project Name="SumofN" ConfigName="Debug"/>
+      <Project Name="Factorial" ConfigName="Debug"/>
+      <Project Name="PowerSeries" ConfigName="Debug"/>
+      <Project Name="TaylorSeries" ConfigName="Debug"/>
+      <Project Name="TaylorSeries_Horner" ConfigName="Debug"/>
+      <Project Name="Fibonacci" ConfigName="Debug"/>
+      <Project Name="nCr" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="TailHead" ConfigName="Release"/>
+      <Project Name="StaticGlobal" ConfigName="Release"/>
+      <Project Name="TreeRecursion" ConfigName="Release"/>
+      <Project Name="IndirectRecursion" ConfigName="Release"/>
+      <Project Name="NestedRecursion" ConfigName="Release"/>
+      <Project Name="SumofN" ConfigName="Release"/>
+      <Project Name="Factorial" ConfigName="Release"/>
+      <Project Name="PowerSeries" ConfigName="Release"/>
+      <Project Name="TaylorSeries" ConfigName="Release"/>
+      <Project Name="TaylorSeries_Horner" ConfigName="Release"/>
+      <Project Name="Fibonacci" ConfigName="Release"/>
+      <Project Name="nCr" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
