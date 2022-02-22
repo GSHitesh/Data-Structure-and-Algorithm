@@ -1,0 +1,41 @@
+std	C:\Users\saihi\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^namespace std { template<typename _Tp> class shared_ptr {$/;"	namespace	line:1
+shared_ptr	C:\Users\saihi\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^namespace std { template<typename _Tp> class shared_ptr { $/;"	class	line:1	namespace:std
+operator ->	C:\Users\saihi\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    _Tp* operator->();$/;"	prototype	line:2	class:std::shared_ptr	access:private	signature:()	returns:_Tp 
+reset	C:\Users\saihi\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr );$/;"	prototype	line:3	class:std::shared_ptr	access:private	signature:( Y* ptr )	returns:void 
+reset	C:\Users\saihi\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d );$/;"	prototype	line:4	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d )	returns:void 
+reset	C:\Users\saihi\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d, Alloc alloc );$/;"	prototype	line:5	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d, Alloc alloc )	returns:void 
+get	C:\Users\saihi\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    _T* get() const;$/;"	prototype	line:6	class:std::shared_ptr	access:private	signature:() const	returns:_T 
+fact	H:\Data-Structure-and-Algorithm\Recursion\Factorial\main.cpp	/^    int fact(int n)$/;"	function	line:5	signature:(int n)	returns:int 
+main	H:\Data-Structure-and-Algorithm\Recursion\Factorial\main.cpp	/^    int main() {$/;"	function	line:16	signature:()	returns:int 
+e	H:\Data-Structure-and-Algorithm\Recursion\TaylorSeries_Horner\main.cpp	/^    double e(int x,int n)$/;"	function	line:5	signature:(int x,int n)	returns:double 
+main	H:\Data-Structure-and-Algorithm\Recursion\TaylorSeries_Horner\main.cpp	/^    int main() {$/;"	function	line:13	signature:()	returns:int 
+x	H:\Data-Structure-and-Algorithm\Recursion\StaticGlobal\main.cpp	/^    int x =0;$/;"	variable	line:5
+fun	H:\Data-Structure-and-Algorithm\Recursion\StaticGlobal\main.cpp	/^    int fun(int n)$/;"	function	line:7	signature:(int n)	returns:int 
+main	H:\Data-Structure-and-Algorithm\Recursion\StaticGlobal\main.cpp	/^    int main() {$/;"	function	line:20	signature:()	returns:int 
+nC	H:\Data-Structure-and-Algorithm\Recursion\nCr\main.cpp	/^    int nC(int n, int r)$/;"	function	line:5	signature:(int n, int r)	returns:int 
+fact	H:\Data-Structure-and-Algorithm\Recursion\nCr\main.cpp	/^    int fact(int n);$/;"	prototype	line:13	signature:(int n)	returns:int 
+C	H:\Data-Structure-and-Algorithm\Recursion\nCr\main.cpp	/^    int C(int n, int r)$/;"	function	line:14	signature:(int n, int r)	returns:int 
+fact	H:\Data-Structure-and-Algorithm\Recursion\nCr\main.cpp	/^    int fact(int n)$/;"	function	line:22	signature:(int n)	returns:int 
+main	H:\Data-Structure-and-Algorithm\Recursion\nCr\main.cpp	/^    int main() {$/;"	function	line:28	signature:()	returns:int 
+power	H:\Data-Structure-and-Algorithm\Recursion\PowerSeries\main.cpp	/^    int power(int n,int m)$/;"	function	line:5	signature:(int n,int m)	returns:int 
+pow	H:\Data-Structure-and-Algorithm\Recursion\PowerSeries\main.cpp	/^    int pow(int n, int m)$/;"	function	line:14	signature:(int n, int m)	returns:int 
+main	H:\Data-Structure-and-Algorithm\Recursion\PowerSeries\main.cpp	/^    int main() {$/;"	function	line:24	signature:()	returns:int 
+taylor_series	H:\Data-Structure-and-Algorithm\Recursion\TaylorSeries\main.cpp	/^    double taylor_series(int x,int n)$/;"	function	line:5	signature:(int x,int n)	returns:double 
+e	H:\Data-Structure-and-Algorithm\Recursion\TaylorSeries\main.cpp	/^    double e(int x, int n)$/;"	function	line:17	signature:(int x, int n)	returns:double 
+main	H:\Data-Structure-and-Algorithm\Recursion\TaylorSeries\main.cpp	/^    int main() {$/;"	function	line:29	signature:()	returns:int 
+i	H:\Data-Structure-and-Algorithm\Recursion\SumofN\main.cpp	/^    int i = 1;$/;"	variable	line:4
+sum	H:\Data-Structure-and-Algorithm\Recursion\SumofN\main.cpp	/^    int sum(int n)$/;"	function	line:5	signature:(int n)	returns:int 
+sum2	H:\Data-Structure-and-Algorithm\Recursion\SumofN\main.cpp	/^    int sum2(int n)$/;"	function	line:13	signature:(int n)	returns:int 
+main	H:\Data-Structure-and-Algorithm\Recursion\SumofN\main.cpp	/^    int main() {$/;"	function	line:18	signature:()	returns:int 
+B	H:\Data-Structure-and-Algorithm\Recursion\IndirectRecursion\main.cpp	/^    void B(int n);$/;"	prototype	line:4	signature:(int n)	returns:void 
+A	H:\Data-Structure-and-Algorithm\Recursion\IndirectRecursion\main.cpp	/^    void A(int n)$/;"	function	line:5	signature:(int n)	returns:void 
+B	H:\Data-Structure-and-Algorithm\Recursion\IndirectRecursion\main.cpp	/^    void B(int n)$/;"	function	line:14	signature:(int n)	returns:void 
+main	H:\Data-Structure-and-Algorithm\Recursion\IndirectRecursion\main.cpp	/^    int main() {$/;"	function	line:23	signature:()	returns:int 
+fun	H:\Data-Structure-and-Algorithm\Recursion\NestedRecursion\main.cpp	/^    int fun(int n)$/;"	function	line:5	signature:(int n)	returns:int 
+main	H:\Data-Structure-and-Algorithm\Recursion\NestedRecursion\main.cpp	/^    int main() {$/;"	function	line:12	signature:()	returns:int 
+fun	H:\Data-Structure-and-Algorithm\Recursion\TreeRecursion\main.cpp	/^    void fun(int n)$/;"	function	line:5	signature:(int n)	returns:void 
+main	H:\Data-Structure-and-Algorithm\Recursion\TreeRecursion\main.cpp	/^    int main() {$/;"	function	line:16	signature:()	returns:int 
+fun	H:\Data-Structure-and-Algorithm\Recursion\TailHead\main.cpp	/^void fun(int n)$/;"	function	line:4	signature:(int n)	returns:void 
+main	H:\Data-Structure-and-Algorithm\Recursion\TailHead\main.cpp	/^    int main() {$/;"	function	line:12	signature:()	returns:int 
+fibonacci	H:\Data-Structure-and-Algorithm\Recursion\Fibonacci\main.cpp	/^    int fibonacci(int n)$/;"	function	line:5	signature:(int n)	returns:int 
+main	H:\Data-Structure-and-Algorithm\Recursion\Fibonacci\main.cpp	/^    int main() {$/;"	function	line:13	signature:()	returns:int 
