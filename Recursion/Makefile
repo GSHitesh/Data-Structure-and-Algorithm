@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ TreeRecursion - Debug ]----------"
-	@cd "TreeRecursion" && "$(MAKE)" -f  "TreeRecursion.mk"
+	@echo "----------Building project:[ StaticGlobal - Debug ]----------"
+	@cd "StaticGlobal" && "$(MAKE)" -f  "StaticGlobal.mk"
 clean:
-	@echo "----------Cleaning project:[ TreeRecursion - Debug ]----------"
-	@cd "TreeRecursion" && "$(MAKE)" -f  "TreeRecursion.mk" clean
+	@echo "----------Cleaning project:[ StaticGlobal - Debug ]----------"
+	@cd "StaticGlobal" && "$(MAKE)" -f  "StaticGlobal.mk" clean
