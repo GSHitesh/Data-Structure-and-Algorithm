@@ -64,9 +64,27 @@ int Binary_search(struct array arr,int key)
 
 }
 
+void reverse(struct array *arr){
+    int i,j;
+    for( i = 0, j =arr->length-1;i<j;i++,j--){
+        int temp = arr->A[i];
+        arr->A[i] = arr->A[j];
+        arr->A[j] = temp;
+    }
+}
 
+void Insert(struct array *arr,int key)
+{
+    int i = arr->length-1;
+    while(arr->A[i] > key)
+    {
+        arr->A[i+1] = arr->A[i];
+        i--;
+    }
 
-
+      arr->A[i+1] = key;
+      arr->length++;
+}
 
 
 
@@ -79,18 +97,29 @@ void display(struct array arr)
 }
 int main()
 {
-    struct array arr = {{1,2,3,4,5},10,5};
+//    struct array arr = {{1,2,3,4,5},10,5};
 
-    display(arr);
-
-    cout << "Binary Search: " << Binary_search(arr,3) << endl;
-    cout << "Recursive Binary Search: " << Rbinary_search(arr.A,0,arr.length,12) << endl;
+//    display(arr);
+//
+//    cout << "Binary Search: " << Binary_search(arr,3) << endl;
+//    cout << "Recursive Binary Search: " << Rbinary_search(arr.A,0,arr.length,12) << endl;
 
 
 
 //    cout << "Linear Search: " << linear_search(&arr,13) << endl;
 //
 //    display(arr);
+
+struct array arr = {{10,20,25,34,50},10,5};
+
+
+//    reverse(&arr);
+//    cout << "Reversed Array: ";
+    display(arr);
+
+    Insert(&arr,30);
+    cout << "Insertion in Sorted Array: ";
+    display(arr);
 
     return 0;
 }
