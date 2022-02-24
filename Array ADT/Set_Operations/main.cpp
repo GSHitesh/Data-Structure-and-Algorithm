@@ -42,7 +42,7 @@ Array Union(Array &arr2){
             arr3.A[k++] = arr2.A[j++];
         else
             {   //Array1 and Array2 element is same
-                arr3.A[k++] = arr2.A[i++];
+                arr3.A[k++] = A[i++];
                 j++;
             }
 
