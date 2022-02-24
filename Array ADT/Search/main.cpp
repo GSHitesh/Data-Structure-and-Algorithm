@@ -86,6 +86,25 @@ void Insert(struct array *arr,int key)
       arr->length++;
 }
 
+void swap(int *x,int *y)
+ {
+ int temp=*x;
+ *x=*y;
+ *y=temp;
+ }
+
+void Rearrange( struct array *arr)
+{
+
+    int i =0;
+    int j = arr->length-1;
+    while(i<j){
+        while(arr->A[i]<0)i++;
+        while(arr->A[j]>=0)j--;
+
+    if(i<j)swap(&arr->A[i],&arr->A[j]);
+        }
+}
 
 
 void display(struct array arr)
@@ -110,15 +129,19 @@ int main()
 //
 //    display(arr);
 
-struct array arr = {{10,20,25,34,50},10,5};
+struct array arr = {{10,-20,25,-34,50},10,5};
 
 
 //    reverse(&arr);
 //    cout << "Reversed Array: ";
-    display(arr);
+//    display(arr);
 
-    Insert(&arr,30);
-    cout << "Insertion in Sorted Array: ";
+//    Insert(&arr,30);
+//    cout << "Insertion in Sorted Array: ";
+//    display(arr);
+
+    Rearrange(&arr);
+    cout << "Rearranged Array: ";
     display(arr);
 
     return 0;
