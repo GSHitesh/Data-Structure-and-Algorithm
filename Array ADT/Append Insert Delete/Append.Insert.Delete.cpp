@@ -12,14 +12,18 @@ struct arr{
 
 
 void display(struct arr ar){
-    for(int i =0;i<ar.length;i++){
+    for (int i = 0; i < ar.length; i++)
+    {
         cout << ar.arr[i] << " ";
-}
+    }
+    
+    
+
 cout << endl;
     
 }
 
-void append(struct arr *ar,int x){ // Its the call by address, as we are upadating the array
+void append(struct arr *ar,int x){ // Its the call by address, as we are updating the array
     if(ar->length <= ar-> size)
         ar->arr[ar->length++] = x;
 }
