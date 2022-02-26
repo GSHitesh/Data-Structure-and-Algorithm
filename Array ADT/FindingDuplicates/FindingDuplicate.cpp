@@ -7,7 +7,7 @@ int main(){
 
     //Program to find duplicates in an array
 
-    vector <int> A {1,2,2,3,4,5,5,5,6,7,7,7};
+    vector <int> A {2,3,5,5,5,6,7,1,7,1,7};
     
     // int lastDuplicate = 0;
 
@@ -20,19 +20,20 @@ int main(){
     //     }
     // }
 
-    // for(int i =0; i<A.size()-1;i++){
-    //         if(A[i] == A[i+1])
-    //         {
-    //             int j = i+1;
-    //             while (A[j] == A[i])
-    //             {
-    //                 j++;
-    //             }
+//For Sorted Array
+    for(int i =0; i<A.size()-1;i++){
+            if(A[i] == A[i+1])
+            {
+                int j = i+1;
+                while (A[j] == A[i])
+                {
+                    j++;
+                }
                 
-    //                 cout << "Duplicate Element: " << A[i] << " " << j-i << endl;
-    //             i = j - 1;
-    //         }
-    //     }
+                    cout << "Duplicate Element: " << A[i] << " " << j-i << endl;
+                i = j - 1;
+            }
+        }
 
     // Hash Technique to solve
     int m = A.size();
@@ -47,6 +48,8 @@ int main(){
                 cout << "Duplicate Element: " << k << " " << H[k];
 
             cout << endl;
+
+
 
         }
 
