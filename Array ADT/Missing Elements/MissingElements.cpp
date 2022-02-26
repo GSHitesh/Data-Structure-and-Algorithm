@@ -49,14 +49,14 @@ void AlternativeTwoMissingElement(int A[], int n)
     int l = A[0];
     int h = A[n-1];
     int H[h] = {0}; // Should be the size of the largest element in an array
-    int diff = l -0;
+    
     for (int  i = 0; i < n; i++)
     {
        H[A[i]]++;          
                
     }
     // This is HashMap Technique using 0 and 1
-    for (int  i = 1; i <=h; i++)
+    for (int  i = 1; i <=h; i++)    //Natural Numbers starts from 1
     {
        if(H[i] == 0)
        {
