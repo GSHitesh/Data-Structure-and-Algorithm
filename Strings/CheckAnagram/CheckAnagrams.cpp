@@ -19,8 +19,8 @@ bool CheckAnagram(string word1,string word2){
         return false;
 
     for(int i =0;i<m;i++){
-            H[word1[i]-97]--;
-            if(H[word1[i]-97]<0){
+            H[word2[i]-97]--;
+            if(H[word2[i]-97]<0){
                 return false;
                 break;
             }
@@ -38,7 +38,7 @@ int main(){
 
     cout << CheckAnagram(word1,word2) << endl; // 1 
     cout << CheckAnagram("Hitesh123","123Hitesh") << endl; // 1
-    cout << CheckAnagram("India124$%india","421%$indiandia") << endl; // 0
+    cout << CheckAnagram("India124$%india","421%$indIAIndia") << endl; // 0
     
 
     return 0;
