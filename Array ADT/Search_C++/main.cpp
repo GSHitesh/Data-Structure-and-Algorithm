@@ -3,7 +3,7 @@
 using namespace std;
 class array{
     private:
-int *A;
+int A[10];
 int size;
 int length;
 void Swap(int *x,int *y)
@@ -16,13 +16,13 @@ void Swap(int *x,int *y)
         array(){
         size = 10;
         length = 0;
-        A = new int[size];
+        // A = new int[size];
         }
 
         array(int sz){
         size = sz;
         length = 0;
-        A = new int[sz];
+        // A = new int[sz];
         }
 
         int linear_search(int key){ // Transposition Technique
@@ -103,7 +103,7 @@ void Rearrange( )
     int j = length-1;
     while(i<j){
         while(A[i]<0)i++;
-        while(A[i]>=0)j--;
+        while(A[j]>=0)j--;
 
     if(i<j)Swap(&A[i],&A[j]);
         }
@@ -132,7 +132,7 @@ array Merge(array &arr2){
             arr3.A[k++] = arr2.A[j++];
 
     }
-    while(i<length)
+        while(i<length)
             arr3.A[k++] = A[i++];
         while(j<arr2.length)
             arr3.A[k++] = arr2.A[j++];
@@ -143,7 +143,7 @@ array Merge(array &arr2){
 }
 
 ~array(){
-    delete [] A;
+    // delete [] A;
 //    cout << "Array Destroyed" <<endl;
 }
 
@@ -154,10 +154,10 @@ int main()
 {
 
     array A;
-
+    
     int x;
     cout << "Enter the Elements of A: " ;
-    for(int i =0;i<5;i++){
+    for(int i =0;i<7;i++){
         cin >> x;
     A.Insert(x);
     }
@@ -165,20 +165,24 @@ int main()
 //    A->reverse();
 //    A->display();
 
+    A.display();
+    A.Rearrange();
+    A.display();
+    
 
-    array B,C;
+    // array B,C;
 
-    int y;
-    cout << "Enter the Elements of B: " ;
-    for(int i =0;i<5;i++){
-        cin >> y;
-    B.Insert(y);
-    }
+    // int y;
+    // cout << "Enter the Elements of B: " ;
+    // for(int i =0;i<5;i++){
+    //     cin >> y;
+    // B.Insert(y);
+    // }
 
 
-    C = A.Merge(B);
-    cout << endl;
-    C.display();
+    // C = A.Merge(B);
+    // cout << endl;
+    // C.display();
 
 
 
