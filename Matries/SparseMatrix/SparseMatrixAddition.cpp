@@ -78,7 +78,7 @@ sparse sparse::operator+(sparse &s){
     while(i < num && j < s.num){
         if(ele[i].i < s.ele[j].i)
             sum->ele[k++] = ele[i++];
-        else if(ele[i].i > s.ele[j].j)
+        else if(ele[i].i > s.ele[j].i)
             sum->ele[k++] = s.ele[j++];
         else{
 
