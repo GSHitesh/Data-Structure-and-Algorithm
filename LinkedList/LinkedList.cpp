@@ -97,22 +97,51 @@ Node * Search(Node *p,int key)
     
 }
 
+void Insert(Node* p, int index, int value)
+{
+    Node* t;
+    if(index == 0)
+    {
+        t = new Node;
+        t->data = value;
+        t->next = first;
+        first = t;
+    }
+
+    else
+    {
+        for(int i = 0; i < index - 1 && p; i++)
+        {
+            if(p!=NULL)
+                p = p->next;
+        }
+        t = new Node;
+        t->data = value;
+        t->next = p->next;
+        p->next = t;
+
+    }
+}
+
 int main(int argc, char const *argv[])
 {
     int A[] = {1,2,3,4,5};
     Create(A,5);
-    RDisplay(first);
-    cout << "\nSum: " << Add(first) << "\n";
-    cout << "Count: " << count(first) << "\n";
-    cout << "Max Element: " << MaxElement(first) << "\n";
+// //     RDisplay(first);
+//     cout << "\nSum: " << Add(first) << "\n";
+//     cout << "Count: " << count(first) << "\n";
+//     cout << "Max Element: " << MaxElement(first) << "\n";
 
-    Node* temp;
-    temp = Search(first,3);
+//     Node* temp;
+//     temp = Search(first,3);
 
-    if(temp)
-        cout << "Found: " << temp->data << endl;
-    else
-        cout << "Not Found \n";
+//     if(temp)
+//         cout << "Found: " << temp->data << endl;
+//     else
+//         cout << "Not Found \n";
+
+    Insert(first,0,8);
+    Insert(first,4,8);
 
     RDisplay(first);
     return 0;
