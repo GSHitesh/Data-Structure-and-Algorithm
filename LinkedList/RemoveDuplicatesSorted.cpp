@@ -57,6 +57,8 @@ void RemoveDuplicates(Node *p)
             p->next = q->next;
             delete q;
             q = p->next;    // stores the address the of the next node of the equal node
+            //we have deleted the node not the entire LL 
+            // q = p is wrong
         }
         
     }

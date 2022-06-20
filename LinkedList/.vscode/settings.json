@@ -2,7 +2,8 @@
     "files.associations": {
         "*.ejs": "html",
         "*.cpp": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "new": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
