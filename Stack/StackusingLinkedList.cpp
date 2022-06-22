@@ -52,7 +52,7 @@ void display()
     cout << endl;
 }
 
-void peek(int pos)
+void peek(int pos)  // Returns the element at the given index
 {
     Node *t = top;
         for(int i=0;t!=NULL && i<pos-1;i++)
@@ -64,6 +64,27 @@ void peek(int pos)
         else    
         cout << -1 << endl;        
     
+}
+
+int stackTop()
+{
+    if(top)
+        return top->data;
+    else
+        return -1;
+}
+
+int isEmpty()
+{
+    return top?0:1;
+}
+
+int isFull()
+{
+    Node *t = new Node;
+    int r = t?1:0;
+    delete t;
+    return r;
 }
 
 int main()
@@ -78,6 +99,8 @@ int main()
     display();
 
     peek(47);
+
+    cout << isEmpty();
 
 
 
