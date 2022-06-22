@@ -22,7 +22,8 @@ void Create(int A[],int n)
         t = new Node;
         t->data = A[i];
         t->next = last->next;   // changes
-        last->next = t;
+        t->prev = last;
+        last->next = t; // Addition
         last = t;
 
     }
@@ -116,14 +117,35 @@ int DeletionLL(Node *p, int index)
     return x;
 }
 
+void Reverse(Node *p)
+{
+    Node *temp;
+    while(p!=NULL)
+    {
+        temp = p->next;
+        p->next = p->prev;
+        p->prev = temp;
+        p = p->prev;
+        if (p && p->next == nullptr){
+            p->next = p->prev;
+            p->prev = nullptr;
+            first = p;
+            break;
+        }
+
+    }
+}
+
 int main()
 {
     int A[] = {1,2,3,4,5};
-    Create(A,5);
+    Create(A,4);
     Display(first);
 
     // Insert(first,7,10);
-    cout << DeletionLL(first,5) << endl;
+    // cout << DeletionLL(first,5) << endl;
+
+    Reverse(first);
 
     Display(first);
 
