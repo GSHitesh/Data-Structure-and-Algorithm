@@ -35,10 +35,10 @@ Queue::Queue(int size)
 
 void Queue::enqueue(int x)
 {
-    if(rear == size-1)
+    if((rear+1)%size == front)
         cout << "Queue is Full" << endl;
     else{
-        rear++;
+        rear = (rear +1)%size;
         Q[rear] = x;
     }
 }
@@ -49,7 +49,7 @@ int Queue::dequeue()
     if(front == rear)
         cout << "Queue is Empty" << endl;
     else{
-        front++; 
+        front = (front+1)%size; 
         x = Q[front];
 
     }
@@ -80,11 +80,20 @@ Queue::~Queue()
 
 int main(){
 
-    Queue q(15);
+    Queue q(5);
     q.enqueue(10);
     q.enqueue(20);
     q.enqueue(30);
     q.enqueue(40);
+    q.enqueue(45);
+    q.display();
+
+    cout << q.dequeue() << " ";
+    cout << q.dequeue() << endl;
+    q.display();
+
+    q.enqueue(50);
+    q.enqueue(60);
 
     q.display();
 
