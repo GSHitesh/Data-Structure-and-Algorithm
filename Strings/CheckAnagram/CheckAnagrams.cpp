@@ -37,7 +37,7 @@ int main(){
     string word2 {"medicadl"};
 
     cout << CheckAnagram(word1,word2) << endl; // 1 
-    cout << CheckAnagram("Hitesh123","123Hitesh") << endl; // 1
+    cout << CheckAnagram("hitesh123","123hitesh") << endl; // 1
     cout << CheckAnagram("India124$%india","421%$indIAIndia") << endl; // 0
     
 
