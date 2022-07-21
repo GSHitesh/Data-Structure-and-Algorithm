@@ -40,7 +40,7 @@ void Merge(int A[], int low, int mid, int high){
 void RecursiveMergeSort(int A[], int low, int high){
     if (low < high){
         // Calculate mid point
-        int mid = low + (high-low)/2;
+        int mid = (high+low)/2;
  
         // Sort sub-lists
         RecursiveMergeSort(A, low, mid);
